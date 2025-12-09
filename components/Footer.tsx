@@ -170,20 +170,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Built with Claude Badge */}
-          <div className="text-center mt-6">
-            <p className="text-xs text-slate-600">
-              Built with 🤖{" "}
-              <a
-                href="https://claude.com/claude-code"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-teal-400 hover:text-teal-300 transition-colors"
-              >
-                Claude Code
-              </a>
-            </p>
-          </div>
         </div>
       </div>
     </footer>

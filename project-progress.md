@@ -312,7 +312,42 @@ For any technical issues or questions about the codebase, refer to:
 **Source:** Malaysian Medical Council (MMC) MeRITS Database - Official Registry
 **Verification URL:** https://merits.mmc.gov.my/search/registeredDoctor
 
+### December 10, 2025 (Evening) - Services Section Complete Redesign
+- ✅ **Analyzed** actual clinic services from Facebook image (60+ services identified)
+- ✅ **Redesigned** "Perkhidmatan Kami" section with two-tier architecture:
+  - **Tier 1:** 4 hero service cards (Bento Grid) with updated English terminology
+  - **Tier 2:** Complete service catalog with Shadcn Tabs component
+- ✅ **Updated** all 4 main services with comprehensive descriptions:
+  1. Consultation & Diagnostics (2x1 span)
+  2. Immunization & Vaccination (1x1)
+  3. Surgery & Procedures (1x1)
+  4. Mother, Child & Family (1x1)
+- ✅ **Removed** all pricing displays per client request
+- ✅ **Removed** "Popular" badge for clean design
+- ✅ **Added** complete service catalog with 3 tabs:
+  - Immunization & Vaccination (Hajj/Umrah, Baby, Food Industry, Others)
+  - Tests & Screening (Rapid Tests, Lab Tests, Health Screening)
+  - Treatments & Procedures (Emergency, Surgery, Wound Care, Women's Health)
+- ✅ **Installed** Shadcn Tabs component
+- ✅ **Used** English terminology throughout (as shown in official service list)
+- ✅ **Maintained** responsive design and Framer Motion animations
+- ✅ **Preserved** WhatsApp integration with service-specific booking
+- ✅ **Tested** - Dev server running successfully on port 3001
+
+**Files Modified:**
+- `lib/constants.ts` - Added serviceCategories object with 60+ services
+- `components/Services.tsx` - Complete redesign with tabs and updated UI
+- `components/ui/tabs.tsx` - Installed via Shadcn CLI
+
+**Key Features:**
+- All 60+ clinic services now discoverable and SEO-friendly
+- Organized by category for easy navigation
+- Mobile-responsive tabs with swipeable interface
+- Smooth animations for tab transitions
+- "Book Appointment via WhatsApp" CTA at bottom
+- Clean, professional design maintaining teal color scheme
+
 ---
 
-**Status:** ✅ Ready for content updates and deployment preparation
-**Next Session:** Focus on real data integration and testing
+**Status:** ✅ Services Section Redesigned - Ready for visual testing and deployment
+**Next Session:** Visual QA, cross-browser testing, and final deployment preparation

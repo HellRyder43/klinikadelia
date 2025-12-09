@@ -1,149 +1,97 @@
 <svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Premium Klinik Adelia Logo - Geometric Lotus with Teal & Gold Accent -->
+  <!-- Klinik Adelia Logo - Based on uploaded design -->
   <defs>
-    <!-- Main Teal Gradient (Primary Brand Color) -->
-    <linearGradient id="tealGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0d9488;stop-opacity:1" />
+    <!-- Blue Gradient (Dark to Light) -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
     </linearGradient>
     
-    <!-- Deep Teal for Depth -->
-    <linearGradient id="deepTeal" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#0f766e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#134e4a;stop-opacity:1" />
+    <!-- Light Blue for center petals -->
+    <linearGradient id="lightBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#93c5fd;stop-opacity:1" />
     </linearGradient>
     
-    <!-- Gold Accent (Premium Touch) -->
-    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
-    </linearGradient>
-    
-    <!-- Subtle Glow Effect -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    
-    <!-- Premium Shadow -->
+    <!-- Shadow -->
     <filter id="shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.15"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.2"/>
     </filter>
   </defs>
   
-  <!-- Background Circle (Optional - can be transparent) -->
-  <circle cx="400" cy="400" r="360" fill="none" stroke="url(#tealGradient)" stroke-width="2" opacity="0.1"/>
+  <!-- Center Y: 450, all petals radiate from center point around 400, 450 -->
   
-  <!-- Geometric Lotus Design - Premium Modern Style -->
-  
-  <!-- Center Core (Gold Accent - Premium Detail) -->
-  <circle cx="400" cy="450" r="32" fill="url(#goldAccent)" opacity="0.9" filter="url(#glow)"/>
-  <circle cx="400" cy="450" r="24" fill="url(#tealGradient)"/>
-  
-  <!-- Inner Petals Layer (5 petals - symmetrical) -->
-  <!-- Top Center Petal -->
-  <path d="M 400 450 L 380 250 Q 400 220 420 250 Z" 
-        fill="url(#tealGradient)" 
+  <!-- Bottom curved base petals (outer layer - 5 petals) -->
+  <!-- Left outer petal -->
+  <path d="M 400 450 Q 200 480 150 420 Q 140 400 160 380 Q 220 420 280 440 Z" 
+        fill="url(#blueGrad)" 
         filter="url(#shadow)"/>
   
-  <!-- Top Left Petal -->
-  <path d="M 400 450 L 280 300 Q 270 270 300 260 L 360 420 Z" 
-        fill="url(#tealGradient)" 
-        filter="url(#shadow)"
-        opacity="0.95"/>
+  <!-- Left-center petal -->
+  <path d="M 400 450 Q 280 460 240 420 Q 230 400 250 380 Q 300 410 340 440 Z" 
+        fill="url(#blueGrad)" 
+        filter="url(#shadow)"/>
   
-  <!-- Top Right Petal -->
-  <path d="M 400 450 L 520 300 Q 530 270 500 260 L 440 420 Z" 
-        fill="url(#tealGradient)" 
-        filter="url(#shadow)"
-        opacity="0.95"/>
-  
-  <!-- Bottom Left Petal -->
-  <path d="M 400 450 L 300 520 Q 280 540 290 570 L 380 470 Z" 
-        fill="url(#deepTeal)" 
+  <!-- Center bottom petal -->
+  <path d="M 400 450 Q 380 490 400 520 Q 420 490 400 450 Z" 
+        fill="url(#blueGrad)" 
         filter="url(#shadow)"
         opacity="0.9"/>
   
-  <!-- Bottom Right Petal -->
-  <path d="M 400 450 L 500 520 Q 520 540 510 570 L 420 470 Z" 
-        fill="url(#deepTeal)" 
-        filter="url(#shadow)"
-        opacity="0.9"/>
-  
-  <!-- Outer Petals Layer (8 petals - creates fullness) -->
-  <!-- Top -->
-  <path d="M 400 450 L 390 180 Q 400 150 410 180 Z" 
-        fill="url(#tealGradient)" 
-        opacity="0.7"
+  <!-- Right-center petal -->
+  <path d="M 400 450 Q 520 460 560 420 Q 570 400 550 380 Q 500 410 460 440 Z" 
+        fill="url(#blueGrad)" 
         filter="url(#shadow)"/>
   
-  <!-- Top-Left -->
-  <path d="M 400 450 L 220 250 Q 200 230 210 210 L 340 400 Z" 
-        fill="url(#tealGradient)" 
-        opacity="0.7"
+  <!-- Right outer petal -->
+  <path d="M 400 450 Q 600 480 650 420 Q 660 400 640 380 Q 580 420 520 440 Z" 
+        fill="url(#blueGrad)" 
         filter="url(#shadow)"/>
   
-  <!-- Top-Right -->
-  <path d="M 400 450 L 580 250 Q 600 230 590 210 L 460 400 Z" 
-        fill="url(#tealGradient)" 
-        opacity="0.7"
+  <!-- Middle layer - Standing petals (5 petals) -->
+  <!-- Left standing petal -->
+  <path d="M 400 450 Q 260 380 220 280 Q 215 250 235 240 Q 280 320 340 400 Z" 
+        fill="url(#blueGrad)" 
         filter="url(#shadow)"/>
   
-  <!-- Left -->
-  <path d="M 400 450 L 160 420 Q 130 420 125 400 L 350 440 Z" 
-        fill="url(#deepTeal)" 
-        opacity="0.6"
+  <!-- Left-center standing petal -->
+  <path d="M 400 450 Q 320 360 300 260 Q 295 230 315 220 Q 350 300 380 390 Z" 
+        fill="url(#blueGrad)" 
         filter="url(#shadow)"/>
   
-  <!-- Right -->
-  <path d="M 400 450 L 640 420 Q 670 420 675 400 L 450 440 Z" 
-        fill="url(#deepTeal)" 
-        opacity="0.6"
+  <!-- Center standing petal (tallest) -->
+  <path d="M 400 450 Q 380 320 380 200 Q 380 170 400 160 Q 420 170 420 200 Q 420 320 400 450 Z" 
+        fill="url(#blueGrad)" 
         filter="url(#shadow)"/>
   
-  <!-- Bottom-Left -->
-  <path d="M 400 450 L 240 600 Q 220 630 235 650 L 370 480 Z" 
-        fill="url(#deepTeal)" 
-        opacity="0.65"
+  <!-- Right-center standing petal -->
+  <path d="M 400 450 Q 480 360 500 260 Q 505 230 485 220 Q 450 300 420 390 Z" 
+        fill="url(#blueGrad)" 
         filter="url(#shadow)"/>
   
-  <!-- Bottom-Right -->
-  <path d="M 400 450 L 560 600 Q 580 630 565 650 L 430 480 Z" 
-        fill="url(#deepTeal)" 
-        opacity="0.65"
+  <!-- Right standing petal -->
+  <path d="M 400 450 Q 540 380 580 280 Q 585 250 565 240 Q 520 320 460 400 Z" 
+        fill="url(#blueGrad)" 
         filter="url(#shadow)"/>
   
-  <!-- Bottom -->
-  <path d="M 400 450 L 395 630 Q 400 660 405 630 Z" 
-        fill="url(#deepTeal)" 
-        opacity="0.5"
+  <!-- Inner light petals (center layer - 3 petals) -->
+  <!-- Left inner petal -->
+  <path d="M 400 450 Q 340 380 330 300 Q 328 280 340 275 Q 360 340 385 410 Z" 
+        fill="url(#lightBlue)" 
         filter="url(#shadow)"/>
   
-  <!-- Premium Detail: Geometric Lines (Abstract Medical Cross) -->
-  <line x1="400" y1="350" x2="400" y2="550" 
-        stroke="url(#goldAccent)" 
-        stroke-width="3" 
-        opacity="0.3"
-        stroke-linecap="round"/>
-  <line x1="300" y1="450" x2="500" y2="450" 
-        stroke="url(#goldAccent)" 
-        stroke-width="3" 
-        opacity="0.3"
-        stroke-linecap="round"/>
+  <!-- Center inner petal -->
+  <path d="M 400 450 Q 390 340 390 240 Q 390 220 400 215 Q 410 220 410 240 Q 410 340 400 450 Z" 
+        fill="url(#lightBlue)" 
+        filter="url(#shadow)"/>
   
-  <!-- Subtle Ring (Luxury Detail) -->
-  <circle cx="400" cy="450" r="200" 
-          fill="none" 
-          stroke="url(#goldAccent)" 
-          stroke-width="1" 
-          opacity="0.15"/>
+  <!-- Right inner petal -->
+  <path d="M 400 450 Q 460 380 470 300 Q 472 280 460 275 Q 440 340 415 410 Z" 
+        fill="url(#lightBlue)" 
+        filter="url(#shadow)"/>
   
-  <circle cx="400" cy="450" r="160" 
-          fill="none" 
-          stroke="url(#tealGradient)" 
-          stroke-width="1" 
-          opacity="0.1"/>
+  <!-- Center crown detail (top accent) -->
+  <path d="M 400 215 Q 385 200 390 180 Q 395 170 400 165 Q 405 170 410 180 Q 415 200 400 215 Z" 
+        fill="#1e3a8a" 
+        opacity="0.8"/>
 </svg>

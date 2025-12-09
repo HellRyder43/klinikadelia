@@ -20,71 +20,194 @@ Dr. Zahhar berdedikasi dalam pendidikan kesihatan komuniti, memastikan setiap pe
 
 export const services = [
   {
-    title: "Perundingan Am",
+    title: "Consultation & Diagnostics",
     description:
-      "Pemeriksaan kesihatan am, diagnosis penyakit, dan rawatan untuk semua peringkat umur. Perkhidmatan walk-in tersedia tanpa temujanji.",
+      "Comprehensive health examinations, disease diagnosis, and rapid diagnostic tests including Covid, Dengue, FBC, and more. Walk-ins welcome.",
     iconName: "Stethoscope" as const,
-    priceRange: "RM30 - RM50",
-    span: "col-span-1" as const,
+    span: "col-span-2" as const,
     imageUrl: "/images/service-consult.webp",
     details: [
-      "Pemeriksaan fizikal lengkap",
-      "Diagnosis penyakit kronik dan akut",
-      "Preskripsi ubat",
-      "Perundingan kesihatan preventif",
-      "Sijil sakit dan laporan perubatan",
+      "General health check-up and consultation",
+      "Rapid diagnostic tests (Covid, Dengue, Influenza, H. Pylori)",
+      "Full Blood Count and Urine Analysis",
+      "Pregnancy Test and Urine Drug Test",
+      "Medical certificates and reports",
+      "Pre-employment and student health screening",
     ],
   },
   {
-    title: "Imbasan Ultrasound",
+    title: "Immunization & Vaccination",
     description:
-      "Perkhidmatan ultrasound 2D dan 4D untuk pemeriksaan kehamilan, organ perut, dan kes-kes perubatan lain. Peralatan moden dan doktor berpengalaman.",
-    iconName: "Activity" as const,
-    priceRange: "RM80 - RM150",
-    span: "col-span-2" as const,
+      "Complete vaccination services including Hajj/Umrah vaccines, baby immunization following KKM schedule, and preventive vaccines for all ages.",
+    iconName: "Syringe" as const,
+    span: "col-span-1" as const,
     imageUrl: "/images/service-ultrasound.webp",
-    badge: "Popular",
     details: [
-      "Ultrasound kehamilan (2D & 4D)",
-      "Imbasan organ abdomen",
-      "Pemeriksaan pelvis",
-      "Imbasan thyroid dan payudara",
-      "Laporan segera dengan gambar",
+      "Hajj/Umrah vaccines (Meningococcal, Influenza, Pneumococcal)",
+      "Baby immunization (KKM vaccination schedule)",
+      "Food industry vaccination (Typhoid)",
+      "Preventive vaccines (Tetanus, Chicken Pox, Dengue)",
+      "Influenza vaccination",
     ],
   },
   {
-    title: "Pembedahan Kecil",
+    title: "Surgery & Procedures",
     description:
-      "Prosedur pembedahan kecil seperti pembuangan ketuat, jahitan luka, dan rawatan abses. Dilakukan dalam persekitaran yang bersih dan selamat.",
+      "Minor surgical procedures, wound care, circumcision, and specialized medical treatments performed in a clean and safe environment.",
     iconName: "Scissors" as const,
-    priceRange: "Harga berdasarkan prosedur",
     span: "col-span-1" as const,
     imageUrl: "/images/service-minor-surgery.webp",
     details: [
-      "Pembuangan ketuat dan cyst",
-      "Jahitan luka dan rawatan trauma",
-      "Rawatan abses dan drainase",
-      "Biopsi kulit",
-      "Pembuangan benda asing",
+      "Minor surgery and circumcision",
+      "Incision & drainage procedures",
+      "Wound care (Gluestich & Suturing)",
+      "Nail removal and foreign body removal",
+      "Dressing and wound management",
+      "Nebulizer treatment and IV Drip",
     ],
   },
   {
-    title: "Ibu & Anak",
+    title: "Mother, Child & Family",
     description:
-      "Penjagaan kesihatan untuk ibu mengandung, bayi, dan kanak-kanak. Termasuk pemeriksaan antenatal, imunisasi, dan pemantauan perkembangan.",
+      "Maternal and child healthcare including pregnancy monitoring, family planning, pediatric care, and women's health services.",
     iconName: "Baby" as const,
-    priceRange: "RM60 - RM120",
     span: "col-span-1" as const,
     imageUrl: "/images/service-consult.webp",
     details: [
-      "Pemeriksaan antenatal lengkap",
-      "Imunisasi bayi dan kanak-kanak",
-      "Pemantauan perkembangan kanak-kanak",
-      "Nasihat penyusuan dan pemakanan",
-      "Rawatan penyakit kanak-kanak",
+      "Pregnancy test and antenatal check-up",
+      "Family planning (IM Depo)",
+      "PAP Smear test",
+      "Infertility test",
+      "Pediatric care and child development monitoring",
+      "Women's health screening",
     ],
   },
 ];
+
+// Complete service catalog organized by category
+export const serviceCategories = {
+  immunization: {
+    title: "Immunization & Vaccination",
+    icon: "Syringe" as const,
+    description: "Comprehensive vaccination services for all age groups",
+    services: [
+      {
+        category: "Hajj/Umrah Vaccination",
+        items: [
+          "Meningococcal Vaccine",
+          "Influenza Vaccine",
+          "Pneumococcal Vaccine",
+        ],
+      },
+      {
+        category: "Baby Immunization",
+        items: ["According to KKM Vaccination Schedule"],
+      },
+      {
+        category: "Food Industry",
+        items: ["Typhoid Vaccine"],
+      },
+      {
+        category: "Other Vaccines",
+        items: [
+          "Tetanus Vaccine",
+          "Chicken Pox Vaccine",
+          "Influenza Vaccine",
+          "Dengue Vaccine",
+        ],
+      },
+    ],
+  },
+  diagnostics: {
+    title: "Tests & Screening",
+    icon: "TestTube2" as const,
+    description: "Rapid diagnostic tests and comprehensive health screening",
+    services: [
+      {
+        category: "Rapid Diagnostic Tests",
+        items: [
+          "Covid Test",
+          "Dengue Test",
+          "Influenza Test",
+          "H. Pylori Test",
+          "Full Blood Count",
+          "Urine Analysis",
+          "Pregnancy Test",
+          "Urine Drug Test",
+        ],
+      },
+      {
+        category: "Laboratory Tests",
+        items: [
+          "Laboratory Test",
+          "Virology Screening",
+          "Allergic Test",
+          "Anemia Profile",
+          "Thalassemia Screening",
+          "Arthritis Profile",
+        ],
+      },
+      {
+        category: "Health Screening",
+        items: [
+          "Health Screening",
+          "Student Checkup",
+          "Pre-Employment Checkup",
+          "PSV/GDL Checkup",
+          "Pre-Marital Screen",
+          "Medical Report",
+        ],
+      },
+    ],
+  },
+  procedures: {
+    title: "Treatments & Procedures",
+    icon: "Stethoscope" as const,
+    description: "Medical procedures and specialized treatments",
+    services: [
+      {
+        category: "Emergency & Home Care",
+        items: ["Accident/Emergency", "Home Care Service"],
+      },
+      {
+        category: "Minor Surgery",
+        items: [
+          "Circumcision",
+          "Incision & Drainage",
+          "Nail Removal",
+          "Foreign Body Removal",
+          "Minor Surgery",
+        ],
+      },
+      {
+        category: "Wound Care",
+        items: ["Gluestich & Suturing", "Dressing/Wound Care"],
+      },
+      {
+        category: "Specialized Treatments",
+        items: [
+          "Nebulizer Treatment",
+          "Intravenous Drip",
+          "Ear Irrigation",
+          "Eye Irrigation",
+          "CBD/Ryles Tube Insertion",
+          "ECG",
+          "Spirometry",
+          "Eczema Treatment",
+        ],
+      },
+      {
+        category: "Women's Health",
+        items: [
+          "PAP Smear Test",
+          "STD Test",
+          "Infertility Test",
+          "Family Planning IM Depo",
+        ],
+      },
+    ],
+  },
+};
 
 export const clinicInfo = {
   whatsappNumber: "+60174820090",

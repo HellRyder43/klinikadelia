@@ -30,12 +30,12 @@ export const metadata: Metadata = {
   ],
   icons: {
     icon: [
-      { url: "/favicons/favicon-premium.ico" },
-      { url: "/favicons/favicon-premium-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicons/favicon-premium-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicons/favicon-final.ico" },
+      { url: "/favicons/favicon-final-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicons/favicon-final-32x32.png", sizes: "32x32", type: "image/png" },
     ],
     apple: [
-      { url: "/favicons/apple-touch-icon-premium.png", sizes: "180x180", type: "image/png" },
+      { url: "/favicons/apple-touch-icon-final.png", sizes: "180x180", type: "image/png" },
     ],
   },
   openGraph: {
