@@ -1,14 +1,21 @@
 export const doctorProfile = {
-  name: "Dr. Adelia Alamsari",
+  name: "Dr. Zahhar Anwar Bin Zainudin",
   role: "General Practitioner",
-  apcNumber: "APC12345",
-  bio: `Dengan pengalaman lebih 15 tahun dalam bidang perubatan keluarga, Dr. Adelia komited untuk memberikan rawatan yang mesra dan profesional kepada setiap pesakit.
+  apcNumber: "17273", // MMC Annual Practicing Certificate 2026
+  fullRegistrationNumber: "65411", // MMC Full Registration Number
+  qualification: "Bachelor of Medicine and Bachelor of Surgery",
+  university: "Universiti Kuala Lumpur",
+  bio: `Dr. Zahhar Anwar Bin Zainudin merupakan doktor perubatan am yang berdaftar sepenuhnya dengan Majlis Perubatan Malaysia (MMC). Beliau telah menamatkan pengajian Bachelor of Medicine and Bachelor of Surgery di Universiti Kuala Lumpur dan telah berpraktik sejak tahun 2015.
 
-Beliau percaya bahawa penjagaan kesihatan yang berkualiti harus mudah diakses oleh semua, dan berdedikasi untuk menyediakan perkhidmatan yang komprehensif untuk seluruh keluarga.
+Dengan pengalaman luas dalam pelbagai bidang perubatan, Dr. Zahhar komited untuk memberikan penjagaan kesihatan yang mesra, profesional, dan mudah diakses kepada setiap pesakit dan keluarga mereka di Klinik Adelia Alamsari. Beliau percaya bahawa komunikasi yang baik antara doktor dan pesakit adalah kunci kepada rawatan yang berkesan.
 
-Dr. Adelia juga aktif dalam pendidikan kesihatan komuniti dan sering mengadakan sesi kesedaran kesihatan untuk penduduk setempat.`,
+Dr. Zahhar berdedikasi dalam pendidikan kesihatan komuniti, memastikan setiap pesakit memahami kondisi kesihatan mereka dan langkah-langkah preventif yang boleh diambil untuk kesejahteraan jangka panjang.`,
   imageUrl: "/images/doctor-profile.webp",
-  certifications: ["MBBS", "MMC Registered", "15+ Years Experience"],
+  certifications: [
+    "MBBS (Universiti Kuala Lumpur)",
+    "MMC Full Registration No: 65411",
+    "APC 2026 No: 17273",
+  ],
 };
 
 export const services = [
@@ -80,21 +87,21 @@ export const services = [
 ];
 
 export const clinicInfo = {
-  whatsappNumber: "+60123456789",
-  whatsappLink: "https://wa.me/60123456789",
+  whatsappNumber: "+60174820090",
+  whatsappLink: "https://wa.me/60174820090",
   whatsappMessage:
-    "Helo Klinik Adelia, saya ingin membuat temujanji untuk [PERKHIDMATAN]. Nama: ___",
-  phone: "+60123456789",
-  email: "info@klinikadelia.com",
-  address: "No. 123, Jalan Alamsari 1, Taman Alamsari, 43650 Bangi, Selangor",
-  landmark: "Bertentangan Giant Alamsari",
+    "Helo Klinik Adelia Alamsari, saya ingin membuat temujanji untuk [PERKHIDMATAN]. Nama: ___",
+  phone: "+60135253503",
+  email: "adeliamedic@gmail.com",
+  address: "7-1, Jalan Sari Niaga, 43000 Kajang, Selangor",
+  landmark: "Berhadapan Masjid Baiturrahman Alam Sari",
   googleMapsEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0!2d101.7!3d2.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMDAnMDAuMCJOIDEwMcKwNDInMDAuMCJF!5e0!3m2!1sen!2smy!4v1234567890",
-  wazeLink: "https://waze.com/ul/hw227u1234",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.5!2d101.7762!3d2.9762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sWQGW%2BCF%20Kajang!5e0!3m2!1sen!2smy!4v1733846400000",
+  wazeLink: "https://www.waze.com/ul?ll=2.9762,101.7762&navigate=yes",
   operatingHours: {
-    weekday: "9:00 AM - 9:00 PM",
-    weekend: "9:00 AM - 5:00 PM",
-    publicHoliday: "Tutup (kecuali notis khas)",
+    weekday: "8:00 AM - 12:00 AM",
+    weekend: "8:00 AM - 12:00 AM",
+    publicHoliday: "8:00 AM - 12:00 AM",
   },
 };
 
@@ -102,7 +109,7 @@ export const reviews = [
   {
     name: "Puan Sarah Ahmad",
     rating: 5,
-    text: "Perkhidmatan yang sangat baik dan doktor yang mesra. Dr. Adelia sangat penyabar dan mengambil masa untuk menjelaskan kondisi kesihatan saya. Klinik yang bersih dan selesa. Highly recommended!",
+    text: "Perkhidmatan yang sangat baik dan doktor yang mesra. Dr. Zahhar Anwar sangat penyabar dan mengambil masa untuk menjelaskan kondisi kesihatan saya. Klinik yang bersih dan selesa. Highly recommended!",
     date: "2 minggu lalu",
     platform: "Google" as const,
     verified: true,
@@ -110,7 +117,7 @@ export const reviews = [
   {
     name: "Encik Hafiz Rahman",
     rating: 5,
-    text: "Klinik panel yang terbaik di Bangi. Masa menunggu sangat singkat walaupun walk-in. Harga berpatutan dan staff yang ramah. Tempat parking juga mencukupi.",
+    text: "Klinik panel yang terbaik di Kajang. Masa menunggu sangat singkat walaupun walk-in. Harga berpatutan dan staff yang ramah. Tempat parking juga mencukupi.",
     date: "1 bulan lalu",
     platform: "Google" as const,
     verified: true,
@@ -118,7 +125,7 @@ export const reviews = [
   {
     name: "Puan Nurul Ain",
     rating: 5,
-    text: "Dr. Adelia sangat teliti dalam pemeriksaan ultrasound kehamilan saya. Beliau mengambil masa untuk menunjukkan baby dan menjawab semua soalan. Terima kasih Dr!",
+    text: "Dr. Zahhar Anwar sangat teliti dalam pemeriksaan ultrasound kehamilan saya. Beliau mengambil masa untuk menunjukkan baby dan menjawab semua soalan. Terima kasih Dr!",
     date: "3 minggu lalu",
     platform: "Facebook" as const,
     verified: true,
@@ -134,7 +141,7 @@ export const reviews = [
   {
     name: "Puan Siti Hajar",
     rating: 5,
-    text: "Anak saya demam panas dan Dr. Adelia rawat dengan sangat baik. Klinik sangat bersih dan mesra kanak-kanak. Akan datang lagi!",
+    text: "Anak saya demam panas dan Dr. Zahhar Anwar rawat dengan sangat baik. Klinik sangat bersih dan mesra kanak-kanak. Akan datang lagi!",
     date: "2 bulan lalu",
     platform: "Google" as const,
     verified: true,

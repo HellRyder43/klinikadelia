@@ -16,15 +16,17 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Klinik Adelia Alamsari | Klinik Panel Bangi",
+  title: "Klinik Adelia Alamsari | Klinik Panel Kajang",
   description:
-    "Klinik perubatan panel di Alamsari, Bangi. Walk-in tiada booking. Buka 7 hari. Panel 12+ insurans. Perkhidmatan: Ultrasound, Ibu & Anak, Pembedahan Kecil.",
+    "Klinik perubatan panel di Kajang. Walk-in tiada booking. Buka 24/7 (8am - 12am). Panel 12+ insurans. Perkhidmatan: Ultrasound, Ibu & Anak, Pembedahan Kecil.",
   keywords: [
-    "klinik bangi",
-    "klinik alamsari",
+    "klinik kajang",
+    "klinik adelia alamsari",
+    "klinik panel kajang",
     "panel klinik",
-    "ultrasound bangi",
+    "ultrasound kajang",
     "klinik ibu mengandung",
+    "klinik 24 jam kajang",
   ],
   icons: {
     icon: [
@@ -56,25 +58,19 @@ export default function RootLayout({
     "image": "https://klinikadelia.com/logo/klinik-adelia-logo.png",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "No. 123, Jalan Alamsari 1, Taman Alamsari",
-      "addressLocality": "Bangi",
+      "streetAddress": "7-1, Jalan Sari Niaga",
+      "addressLocality": "Kajang",
       "addressRegion": "Selangor",
-      "postalCode": "43650",
+      "postalCode": "43000",
       "addressCountry": "MY"
     },
-    "telephone": "+60123456789",
+    "telephone": "+60135253503",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "09:00",
-        "closes": "21:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Saturday", "Sunday"],
-        "opens": "09:00",
-        "closes": "17:00"
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "08:00",
+        "closes": "00:00"
       }
     ],
     "aggregateRating": {
@@ -89,7 +85,35 @@ export default function RootLayout({
       "Obstetrics",
       "Pediatrics",
       "Minor Surgery"
-    ]
+    ],
+    "physician": {
+      "@type": "Physician",
+      "name": "Dr. Zahhar Anwar Bin Zainudin",
+      "medicalSpecialty": "General Practice",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Universiti Kuala Lumpur"
+      },
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "Bachelor of Medicine and Bachelor of Surgery"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "professional certification",
+          "name": "Malaysian Medical Council Full Registration",
+          "identifier": "65411"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "professional license",
+          "name": "Annual Practicing Certificate 2026",
+          "identifier": "17273"
+        }
+      ]
+    }
   };
 
   return (

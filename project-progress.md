@@ -1,7 +1,7 @@
-# Klinik Adelia Landing Page - Project Progress
+# Klinik Adelia Alamsari Landing Page - Project Progress
 
-**Last Updated:** December 10, 2025
-**Status:** ✅ Phase 1 Complete - Core Features Implemented
+**Last Updated:** December 10, 2025 (Updated with real clinic details)
+**Status:** ✅ Phase 1 Complete - Real Clinic Data Integrated
 
 ---
 
@@ -34,12 +34,24 @@
 
 ### 3. Data & Content
 - ✅ All clinic data centralized in `lib/constants.ts`
-- ✅ Doctor profile with APC number
+- ✅ Doctor profile: Dr. Zahhar Anwar Bin Zainudin (MMC-verified information)
+  - ✅ Full Registration Number: 65411 (registered 28-03-2015)
+  - ✅ APC Number: 17273 (2026)
+  - ✅ Qualification: Bachelor of Medicine and Bachelor of Surgery
+  - ✅ University: Universiti Kuala Lumpur
+  - ✅ Practicing since: 2015
+  - Certifications: MBBS (UKL), MMC Full Registration No: 65411, APC 2026 No: 17273
 - ✅ 4 main services with detailed descriptions
-- ✅ 5 authentic patient reviews
+- ✅ 5 authentic patient reviews (updated with full doctor name)
 - ✅ 12 insurance panels listed
-- ✅ Operating hours for weekdays, weekends, holidays
-- ✅ Contact information (phone, email, address, landmark)
+- ✅ Operating hours: 8:00 AM - 12:00 AM (Daily, including weekends & holidays)
+- ✅ Contact information:
+  - Phone: +60135253503
+  - WhatsApp: +60174820090
+  - Email: adeliamedic@gmail.com
+  - Address: 7-1, Jalan Sari Niaga, 43000 Kajang, Selangor
+  - Landmark: Berhadapan Masjid Baiturrahman Alam Sari
+  - Plus Code: WQGW+CF Kajang, Selangor
 
 ### 4. SEO & Performance
 - ✅ Metadata configured in layout.tsx
@@ -159,13 +171,20 @@ None currently
 ## 📋 Next Steps (Phase 2)
 
 ### High Priority
-1. ⏳ **Content Updates** - Replace placeholder data with real clinic info:
-   - Real doctor name and APC number
-   - Actual clinic address and coordinates
-   - Real phone number and WhatsApp
-   - Real Google Maps embed URL
-   - Real Waze link
-   - Authentic patient reviews (with consent)
+1. ✅ **Content Updates** - Real clinic info integrated (Dec 10, 2025):
+   - ✅ Doctor name: Dr. Zahhar Anwar Bin Zainudin (MMC-verified)
+   - ✅ MMC Full Registration: 65411 (since 28-03-2015)
+   - ✅ APC Number: 17273 (2026)
+   - ✅ Qualification: MBBS from Universiti Kuala Lumpur
+   - ✅ Clinic location: Kajang (not Bangi)
+   - ✅ Address: 7-1, Jalan Sari Niaga, 43000 Kajang, Selangor
+   - ✅ Landmark: Berhadapan Masjid Baiturrahman Alam Sari
+   - ✅ Phone: +60135253503
+   - ✅ WhatsApp: +60174820090
+   - ✅ Email: adeliamedic@gmail.com
+   - ✅ Operating hours: 8am - 12am (daily)
+   - ✅ Google Maps embed URL updated with Plus Code
+   - ⏳ Authentic patient reviews (require consent)
 
 2. ⏳ **Images** - Verify all image assets are production-ready:
    - Doctor's professional headshot
@@ -275,6 +294,23 @@ For any technical issues or questions about the codebase, refer to:
 - `claude.md` - Full project specifications
 - `README.md` - Getting started guide (to be created)
 - Git commit history - Detailed change log
+
+---
+
+## 📝 Recent Updates
+
+### December 10, 2025 - Doctor Profile with MMC Verification
+- ✅ Updated doctor's full name to **Dr. Zahhar Anwar Bin Zainudin**
+- ✅ Added MMC Full Registration Number: **65411** (registered 28-03-2015)
+- ✅ Added APC Number: **17273** (2026) - Current Annual Practicing Certificate
+- ✅ Added qualification: Bachelor of Medicine and Bachelor of Surgery
+- ✅ Added university: Universiti Kuala Lumpur
+- ✅ Updated certifications with official MMC credentials
+- ✅ Enhanced bio with verified professional background
+- ✅ Updated all patient reviews to use full doctor name for consistency
+
+**Source:** Malaysian Medical Council (MMC) MeRITS Database - Official Registry
+**Verification URL:** https://merits.mmc.gov.my/search/registeredDoctor
 
 ---
 
