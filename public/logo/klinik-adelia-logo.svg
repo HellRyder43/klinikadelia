@@ -1,0 +1,149 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Premium Klinik Adelia Logo - Geometric Lotus with Teal & Gold Accent -->
+  <defs>
+    <!-- Main Teal Gradient (Primary Brand Color) -->
+    <linearGradient id="tealGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d9488;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Deep Teal for Depth -->
+    <linearGradient id="deepTeal" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0f766e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#134e4a;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gold Accent (Premium Touch) -->
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Subtle Glow Effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Premium Shadow -->
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Background Circle (Optional - can be transparent) -->
+  <circle cx="400" cy="400" r="360" fill="none" stroke="url(#tealGradient)" stroke-width="2" opacity="0.1"/>
+  
+  <!-- Geometric Lotus Design - Premium Modern Style -->
+  
+  <!-- Center Core (Gold Accent - Premium Detail) -->
+  <circle cx="400" cy="450" r="32" fill="url(#goldAccent)" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="400" cy="450" r="24" fill="url(#tealGradient)"/>
+  
+  <!-- Inner Petals Layer (5 petals - symmetrical) -->
+  <!-- Top Center Petal -->
+  <path d="M 400 450 L 380 250 Q 400 220 420 250 Z" 
+        fill="url(#tealGradient)" 
+        filter="url(#shadow)"/>
+  
+  <!-- Top Left Petal -->
+  <path d="M 400 450 L 280 300 Q 270 270 300 260 L 360 420 Z" 
+        fill="url(#tealGradient)" 
+        filter="url(#shadow)"
+        opacity="0.95"/>
+  
+  <!-- Top Right Petal -->
+  <path d="M 400 450 L 520 300 Q 530 270 500 260 L 440 420 Z" 
+        fill="url(#tealGradient)" 
+        filter="url(#shadow)"
+        opacity="0.95"/>
+  
+  <!-- Bottom Left Petal -->
+  <path d="M 400 450 L 300 520 Q 280 540 290 570 L 380 470 Z" 
+        fill="url(#deepTeal)" 
+        filter="url(#shadow)"
+        opacity="0.9"/>
+  
+  <!-- Bottom Right Petal -->
+  <path d="M 400 450 L 500 520 Q 520 540 510 570 L 420 470 Z" 
+        fill="url(#deepTeal)" 
+        filter="url(#shadow)"
+        opacity="0.9"/>
+  
+  <!-- Outer Petals Layer (8 petals - creates fullness) -->
+  <!-- Top -->
+  <path d="M 400 450 L 390 180 Q 400 150 410 180 Z" 
+        fill="url(#tealGradient)" 
+        opacity="0.7"
+        filter="url(#shadow)"/>
+  
+  <!-- Top-Left -->
+  <path d="M 400 450 L 220 250 Q 200 230 210 210 L 340 400 Z" 
+        fill="url(#tealGradient)" 
+        opacity="0.7"
+        filter="url(#shadow)"/>
+  
+  <!-- Top-Right -->
+  <path d="M 400 450 L 580 250 Q 600 230 590 210 L 460 400 Z" 
+        fill="url(#tealGradient)" 
+        opacity="0.7"
+        filter="url(#shadow)"/>
+  
+  <!-- Left -->
+  <path d="M 400 450 L 160 420 Q 130 420 125 400 L 350 440 Z" 
+        fill="url(#deepTeal)" 
+        opacity="0.6"
+        filter="url(#shadow)"/>
+  
+  <!-- Right -->
+  <path d="M 400 450 L 640 420 Q 670 420 675 400 L 450 440 Z" 
+        fill="url(#deepTeal)" 
+        opacity="0.6"
+        filter="url(#shadow)"/>
+  
+  <!-- Bottom-Left -->
+  <path d="M 400 450 L 240 600 Q 220 630 235 650 L 370 480 Z" 
+        fill="url(#deepTeal)" 
+        opacity="0.65"
+        filter="url(#shadow)"/>
+  
+  <!-- Bottom-Right -->
+  <path d="M 400 450 L 560 600 Q 580 630 565 650 L 430 480 Z" 
+        fill="url(#deepTeal)" 
+        opacity="0.65"
+        filter="url(#shadow)"/>
+  
+  <!-- Bottom -->
+  <path d="M 400 450 L 395 630 Q 400 660 405 630 Z" 
+        fill="url(#deepTeal)" 
+        opacity="0.5"
+        filter="url(#shadow)"/>
+  
+  <!-- Premium Detail: Geometric Lines (Abstract Medical Cross) -->
+  <line x1="400" y1="350" x2="400" y2="550" 
+        stroke="url(#goldAccent)" 
+        stroke-width="3" 
+        opacity="0.3"
+        stroke-linecap="round"/>
+  <line x1="300" y1="450" x2="500" y2="450" 
+        stroke="url(#goldAccent)" 
+        stroke-width="3" 
+        opacity="0.3"
+        stroke-linecap="round"/>
+  
+  <!-- Subtle Ring (Luxury Detail) -->
+  <circle cx="400" cy="450" r="200" 
+          fill="none" 
+          stroke="url(#goldAccent)" 
+          stroke-width="1" 
+          opacity="0.15"/>
+  
+  <circle cx="400" cy="450" r="160" 
+          fill="none" 
+          stroke="url(#tealGradient)" 
+          stroke-width="1" 
+          opacity="0.1"/>
+</svg>
