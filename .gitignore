@@ -38,12 +38,5 @@ yarn-error.log*
 # Husky
 .husky/_
 
-# Markdown files (ignore all .md files by default)
+# Markdown files (ignore all .md files)
 *.md
-
-# Project Progress (keep tracked)
-!project-progress.md
-
-# Claude instructions (keep tracked)
-!claude.md
-!CLAUDE.md
