@@ -86,7 +86,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Panel 12+ Insurans • Walk-in Tiada Booking • Buka 7 Hari
+            Panel 12+ Insurans • Walk-in / Temujani • Buka 7 Hari
           </motion.p>
 
           {/* Trust Badges */}
