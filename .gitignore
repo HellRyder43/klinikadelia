@@ -18,6 +18,7 @@ next-env.d.ts
 .DS_Store
 *.pem
 .vscode/
+.mcp.json
 
 # Debug
 npm-debug.log*
