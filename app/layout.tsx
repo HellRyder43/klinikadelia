@@ -49,8 +49,57 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Klinik Adelia Alamsari",
+    "image": "https://klinikadelia.com/logo/klinik-adelia-logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "No. 123, Jalan Alamsari 1, Taman Alamsari",
+      "addressLocality": "Bangi",
+      "addressRegion": "Selangor",
+      "postalCode": "43650",
+      "addressCountry": "MY"
+    },
+    "telephone": "+60123456789",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "120"
+    },
+    "priceRange": "$$",
+    "medicalSpecialty": [
+      "General Practice",
+      "Family Medicine",
+      "Obstetrics",
+      "Pediatrics",
+      "Minor Surgery"
+    ]
+  };
+
   return (
     <html lang="ms" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${inter.variable} ${playfair.variable} font-inter antialiased`}>
         <ThemeProvider
           attribute="class"
