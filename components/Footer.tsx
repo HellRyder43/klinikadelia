@@ -22,9 +22,9 @@ export default function Footer() {
               />
               <div>
                 <h3 className="font-playfair text-lg font-bold text-white">
-                  Klinik Adelia
+                  Klinik Adelia Alamsari
                 </h3>
-                <p className="text-xs text-slate-400">Alamsari, Bangi</p>
+                <p className="text-xs text-slate-400">Kajang</p>
               </div>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed">

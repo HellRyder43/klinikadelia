@@ -82,10 +82,10 @@ export default function Navbar() {
               </motion.div>
               <div className="hidden sm:block">
                 <h1 className="font-playfair text-lg font-bold text-slate-900 dark:text-white">
-                  Klinik Adelia
+                  Klinik Adelia Alamsari
                 </h1>
                 <p className="text-xs text-slate-600 dark:text-slate-400">
-                  Alamsari, Bangi
+                  Kajang
                 </p>
               </div>
             </Link>

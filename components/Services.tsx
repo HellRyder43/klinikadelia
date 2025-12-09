@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Stethoscope, Activity, Scissors, Baby, X } from "lucide-react";
+import { Stethoscope, Activity, Scissors, Baby } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -21,7 +21,7 @@ export default function Services() {
 
   const whatsappUrl = (serviceName: string) =>
     `${clinicInfo.whatsappLink}?text=${encodeURIComponent(
-      `Helo Klinik Adelia, saya ingin membuat temujanji untuk ${serviceName}. Nama: ___`
+      `Helo Klinik Adelia Alamsari, saya ingin membuat temujanji untuk ${serviceName}. Nama: ___`
     )}`;
 
   return (
@@ -43,16 +43,14 @@ export default function Services() {
           </p>
         </motion.div>
 
-        {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
           {services.map((service, index) => {
             const Icon = iconMap[service.iconName];
-            const isLarge = service.span === "col-span-2";
 
             return (
               <motion.div
                 key={index}
-                className={`${isLarge ? "lg:col-span-2" : "lg:col-span-1"}`}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
